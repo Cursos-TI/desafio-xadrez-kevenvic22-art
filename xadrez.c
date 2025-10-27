@@ -1,25 +1,33 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int movimento_bispo = 1; // O Bispo mve-se na diagona
+    int movimento_torre = 1;// A Torre,move-se em linha reta horizontalmente ou verticalmente
+    int movimento_rainha = 1; // A Rainha move-se em qualquer direção (horizontal, vertical, diagonal)
+    //Movimentação do Bispo
+    printf("Movimentação do Bispo:\n");
+    while (movimento_bispo <= 5)
+    {
+      printf("Cima Direita\n");
+        movimento_bispo++;
+    }      
+    // Movimentação da Torre
+    printf("Movimentação da Torre:\n");
+    do {
+      printf("Direita\n");
+        movimento_torre++;
+    } while (movimento_torre <= 5);
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
+    // Movimentação da Rainha
+    printf("Movimentação da Rainha:\n");
+    for (movimento_rainha; movimento_rainha <= 5; movimento_rainha++) {
+    
+        printf("Diagonal Esquerda\n");
+    }
+   
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
